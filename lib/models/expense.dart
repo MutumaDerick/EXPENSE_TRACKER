@@ -2,7 +2,7 @@ import 'package:uuid/uuid.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-final formater = DateFormat.yMd();
+final formatter = DateFormat.yMd();
 
 const uuid = Uuid();
 
@@ -17,13 +17,13 @@ enum Category {
 }
 
 const categoryIcons = {
-  Category.food: Icons.fastfood_outlined,
-  Category.bills: Icons.receipt_long_outlined,
-  Category.transport: Icons.directions_bus_outlined,
-  Category.shopping: Icons.shopping_cart_outlined,
-  Category.health: Icons.local_hospital_outlined,
-  Category.entertainment: Icons.movie_outlined,
-  Category.others: Icons.category_outlined,
+  Category.food: Icons.fastfood,
+  Category.bills: Icons.receipt_long,
+  Category.transport: Icons.directions_bus,
+  Category.shopping: Icons.shopping_cart,
+  Category.health: Icons.local_hospital,
+  Category.entertainment: Icons.movie,
+  Category.others: Icons.category_sharp,
 };
 
 class Expense {
@@ -40,7 +40,7 @@ class Expense {
   final DateTime date;
   final Category category;
 
-   String get formattedDate {
-    return formater.format(date);
-   }
+  String get formattedDate {
+    return formatter.format(date);
+  }
 }
