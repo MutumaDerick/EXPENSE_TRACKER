@@ -78,6 +78,7 @@ class _NewExpenseState extends State<NewExpense> {
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 48, 16, 16),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextField(
             controller: _titleController,
